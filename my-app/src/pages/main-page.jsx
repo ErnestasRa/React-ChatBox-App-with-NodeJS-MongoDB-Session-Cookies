@@ -32,14 +32,14 @@ const MainPage = () => {
 
   return (
     <div className='chat-box'>
-        {message.map((message,i) => {
+        {message.map((chatMessage,i) => {
             return <ChatBoxMessage 
-                message={message.message}            
-                color={message.color}
+                message={chatMessage.message}            
+                color={chatMessage.color}
                 date={new Date().getFullYear()}
                 messagesCount={message.length}
-                name={message.email}
-                symbolCount={message.message.length}
+                name={chatMessage.email}
+                symbolCount={chatMessage.message.length}
                 key={i}
             />
         })}
