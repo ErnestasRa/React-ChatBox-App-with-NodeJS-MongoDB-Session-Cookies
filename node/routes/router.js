@@ -6,5 +6,5 @@ const {register, login, postuser, createpost, mainpage, sendmessage, allmessages
 router.post('/register', emailValid, passwordValid, register)
 router.post('/sendmessage', sendmessage)
 router.get('/allmessages', allmessages)
-
+router.get('/autologin')
 module.exports = router
